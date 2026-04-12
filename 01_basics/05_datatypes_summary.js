@@ -36,3 +36,29 @@ const myFunction = function(){
 
 
 console.log(typeof bigNumber);
+
+// +++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(Primitive), Heap(Non-Primitive)
+
+let myName = "Pooja"
+
+let MySisName = myName
+mySisName = "Vidya"
+
+console.log(myName);
+console.log(mySisName);
+
+let user1 = {
+    email: "user1@gmail.com",
+    upi: "abcd@ybl"
+}
+
+let user2 = user1
+
+user2.email = "user2@gmail.com"
+
+console.log(user2);
+
+//Stack Memory = It copied from another variable
+//Heap Memory = It took reference from another variable
