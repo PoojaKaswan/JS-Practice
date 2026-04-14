@@ -2,20 +2,20 @@
 
 const myArr = [0, 1, 2, 3, 4, 5, true, "hitesh"]
 
-// myArr.push(6)
-// myArr.pop()
+myArr.push(6)
+myArr.pop()
 
-// myArr.unshift(9);
-// myArr.shift() //Good for optimization but not suitable for large data
+myArr.unshift(9);
+myArr.shift() //Good for optimization but not suitable for large data
 
-// console.log(myArr.includes(9));
-// console.log(myArr.indexOf(3));
+console.log(myArr.includes(9));
+console.log(myArr.indexOf(3));
 
-// const newArr = myArr.join()
+const newArr = myArr.join()
 
-// console.log(myArr);
-// console.log(newArr);
-// console.log(typeof newArr);
+console.log(myArr);
+console.log(newArr);
+console.log(typeof newArr);
 
 
 // slice, splice

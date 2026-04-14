@@ -20,7 +20,7 @@ console.log(gameName.indexOf('o'));
 const newString = gameName.substring(0,4)
 console.log(newString);
 
-const anotherString = gameName.slice(-5, 4)
+const anotherString = gameName.slice(0, 3)
 console.log(anotherString);
 
 const newStringOne = "  hitesh  "
