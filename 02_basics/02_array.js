@@ -3,15 +3,15 @@ const dc_heros = ["superman", "flash", "batman"]
 //values in array are called elements.
 //marvel_heroes: 3 elements
 
-//marvel_heros.push(dc_heros);
+marvel_heros.push(dc_heros);
 //marvel_heroes: 4 elements
 
-// console.log(marvel_heros);
-// console.log(marvel_heros[3][1]);
+console.log(marvel_heros);
+console.log(marvel_heros[3][1]);
 
 
-// const all_heros = marvel_heros.concat(dc_heros)
-// console.log(all_heros);
+const all_heros = marvel_heros.concat(dc_heros)
+console.log(all_heros);
 
 const all_new_heros = [...marvel_heros, ...dc_heros]//Mostly used this method rather than concat
 // console.log(all_new_heros);
@@ -21,8 +21,8 @@ const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 const real_another_array = another_array.flat(Infinity);//2: layer depth, use Infinity for full depth
 console.log(real_another_array);
 
-console.log(Array.isArray("Hitesh"));
-console.log(Array.from("Hitesh"));
+console.log(Array.isArray([1, 2, 3]));
+console.log(Array.from("Hitesh"));// Creates an array from an iterable object.
 //console.log(Array.from(name: "Hitesh"));//interesting
 
 let score1 = 100
