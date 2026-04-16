@@ -29,7 +29,7 @@ const obj3 = {...obj1, ...obj2}
 
 //console.log(obj3)
 //console.log(obj1)
-console.log(obj4)
+console.log(obj3)
 
 const objsInArr = [
     {
@@ -47,3 +47,8 @@ const objsInArr = [
 ]
 
 console.log(objsInArr[0].name);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn')) //to find if object has particular property
