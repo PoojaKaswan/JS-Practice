@@ -1,4 +1,4 @@
-//const tinderUser = new Object() // Singleton object
+/*//const tinderUser = new Object/() // Singleton object
 const tinderUser = {} // Non singleton object
 
 tinderUser.id = "123abc"
@@ -52,3 +52,26 @@ console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) //to find if object has particular property
+
+*/
+
+//Object de-structure
+
+const course = {
+    coursName: "js in hindi",
+    price: "999",
+    courseIntructor: "hitesh"
+}
+
+//course.courseIntructor
+
+const {courseIntructor: instructor} = course //Changed courseIntructor long name into small instructor name
+
+console.log(instructor);
+
+
+const navbar = () => {
+
+}
+
+navbar(company = "Pooja")
