@@ -23,8 +23,8 @@
 				"wayou.vscode-todo-highlight"
 			],
 			"settings": {
-				"editor.fontSize": 32,
-				"terminal.integrated.fontSize": 28,
+				"editor.fontSize": 24,
+				"terminal.integrated.fontSize": 24,
 				"editor.wordWrap": "on"
 			}
 			
