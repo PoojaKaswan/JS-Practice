@@ -65,13 +65,37 @@ const course = {
 
 //course.courseIntructor
 
-const {courseIntructor: instructor} = course //Changed courseIntructor long name into small instructor name
+//const {courseIntructor} = course //When you have to call an object property many times then without typing course.courseIntructor each time we can now use only courseIntructor in cosnole.log(courseIntructor)
+
+const {courseIntructor: instructor} = course // wecan also change courseIntructor long name into small instructor name 
 
 console.log(instructor);
 
 
-const navbar = () => {
+//in react: it is s example to show object destructoring
+const navbar = ({company}) => {
 
 }
 
-navbar(company = "Pooja")
+navbar(company = "Pooja")//calling navbar and putting values in it
+
+
+// Introducing API
+
+// API called by JSON: Yes it looks but without name, and with double ""(not in number & boolean value) in key & value both, called JSON
+// {
+//   "name": "Pooja",
+//   "id": 76325,
+//   "sign_admin": true,
+//   "coursename": "js in hindi",
+//   "price": "free"
+// } 
+
+//API can be in Array format too in JSON:
+/*
+[
+    {},
+    {},
+    {}
+]
+*/
