@@ -57,7 +57,7 @@ function addone(num){
     return num + 1
 }
 
-console.log(addone(5))
+console.log(addone(5))h
 
 //another way of creating function:
 const addTwo = function(num){
