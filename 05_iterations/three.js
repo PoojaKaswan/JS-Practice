@@ -40,7 +40,7 @@ const myObj = {
 }
 
 for (const [key, value] of myObj) {
-    console.log(key)
+    // console.log(key)
 } 
 
 // In this way object is not iterable like Map
