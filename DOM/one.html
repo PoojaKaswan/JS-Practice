@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 id="title" class="heading">Dom learning on Chai aur code</h1>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">Dom learning on Chai aur code <span style="display: none;">test and text</span></h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+        </ul>
     </div>
 </body>
 </html>
@@ -25,5 +40,101 @@ console.log(document.getElementById('firstHeading'))
 <h1 id="firstHeading" class="firstHeading mw-first-heading">@</h1>
 
 console. log(document.getElementById('firstHeading').innerHTML = "<h1>Chai aur code</h1>")
+
+title.innerText
+'Dom learning on Chai aur code'
+title.textContent
+'Dom learning on Chai aur code test and text'
+
+one.html:46 Live reload enabled.
+document.getElementById('title')
+<h1 id=​"title" class=​"test" style=​"background-color:​ red;​ padding:​ 15px;​ border-radius:​ 15px;​">​…​</h1>​
+document.getElementById('title').id
+'title'
+document.getElementById('title').class
+undefined
+document.getElementById('title').className
+'heading'
+document.getElementById('title').className.getAttribute
+undefined
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading'
+document.getElementById('title').setAttribute('class', 'test')
+undefined
+const title = document.getElementById('title')
+undefined
+title
+<h1 id=​"title" class=​"test" style=​"background-color:​ red;​ padding:​ 15px;​ border-radius:​ 15px;​">​…​</h1>​
+title.style.backgroundColor= 'red'
+'red'
+title.style.padding= "15px"
+'15px'
+title.style.borderRadius= "15px"
+'15px'
+title.innerText
+'Dom learning on Chai aur code'
+title.textContent
+'Dom learning on Chai aur code test and text'
+
+title.innerHTML
+'Dom learning on Chai aur code <span style="display: none;">test and text</span>'
+
+document.getElementsByClassName('heading')
+HTMLCollection []
+
+document.querySelector('h1')
+<h1 id=​"title" class=​"test" style=​"background-color:​ red;​ padding:​ 15px;​ border-radius:​ 15px;​">​…​</h1>​"Dom learning on Chai aur code "<span style=​"display:​ none;​">​test and text​</span>​</h1>​
+
+document.querySelectorAll('h2')
+
+document.querySelector('#title')
+
+document.querySelector('input[type="password"]')
+<input type=​"password" name fdprocessedid=​"3dpwol">​
+
+document.querySelector('p:first-child')
+
+document.querySelector('ul')
+<ul>​…​</ul>​
+const myul = document.querySelector('ul')
+undefined
+myul.querySelector('li')
+<li style=​"background-color:​ green;​ padding:​ 10px;​">​…​</li>​
+const green = myul.querySelector('li')
+undefined
+green.style.backgroundColor = "green"
+'green'
+green.style.padding = "10px"
+'10px'
+
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(3) [li, li, li]
+const myArr = [1, 2, 3, 4]
+undefined
+myArr
+(4) [1, 2, 3, 4]0: 11: 22: 33: 4length: 4[[Prototype]]:
+tempLiList
+NodeList(3) [li, li, li]
+tempLiList[1].style.color = 'green'
+'green'
+const myH1 = document.querySelectorAll('h1')
+undefined
+myH1
+NodeList [h1#title.heading]
+myH1.style.color = 'green'
+
+myH1[0].style.color = 'green'
+'green'
+
+tempLiList.forEach( (li) => li.style.backgroundColor = 'green')
 
 -->
