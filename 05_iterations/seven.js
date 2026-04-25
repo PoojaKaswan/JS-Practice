@@ -1,9 +1,5 @@
 const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// to add value in array: myNumbers.push(11)
-
-//Anoyher way using Map:
-
 // const newNums = myNumbers.map( (num) => num + 10) 
 
 // Chaining:
