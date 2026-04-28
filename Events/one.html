@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #313131;
+color: #fff;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200" id="sky1" src="https://images.pexels.com/photos/6793712/pexels-photo-6793712.jpeg" alt="phtoshop"/></li>
+            <li><img width="200" id="sky2" src="https://images.pexels.com/photos/8150269/pexels-photo-8150269.jpeg"/></li>
+            <li><img width="200" id="sky3" src="https://images.pexels.com/photos/3180831/pexels-photo-3180831.jpeg"/></li>
+            <li><a id="google" href="https://www.google.com"/>google</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // Don't use onclick in html for large scale projects
+    // attachEvent(): IE only, deprecated
+    // jQuery framework - on event listener
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, metaKey, keyCode
+    
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside ul");
+    }, false);
+
+    document.getElementById('sky3').addEventListener('click', function(e){
+        console.log("3rd sky image clicked");
+        e.stopPropagation(); // stop event bubbling
+    }, false);
+    // image clicked - sky3 event listener is executed first, then ul event listener is executed because of event bubbling and event propagation. If we set the third parameter of addEventListener to true, then the event capturing will happen and the ul event listener will be executed first, then the sky3 event listener will be executed.
+    // event propagation - event bubbling and event capturing
+    // false - event bubbling (default)
+    // true - event capturing
+
+    document.getElementById('google').addEventListener('click', function(e) {
+        e.preventDefault(); // prevent default action of the event, in this case, it will prevent the default action of the anchor tag which is to navigate to the href link.
+        console.log("google link clicked, but default action prevented");
+    }, false);
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            // removeIt.remove();
+            removeIt.parentNode.removeChild(removeIt)
+        } 
+    }, false)
+</script>
+</html>
